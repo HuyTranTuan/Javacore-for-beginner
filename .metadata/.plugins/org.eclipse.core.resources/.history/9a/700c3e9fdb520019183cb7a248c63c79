@@ -1,0 +1,23 @@
+package buoi01;
+import java.util.Scanner;
+public class Compare2String {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public static void inputString() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Enter string 1: ");
+		String str1 = scanner.nextLine();
+		System.out.print("Enter string 2: ");
+		String str2 = scanner.nextLine();
+		if(str1 == str2) {
+			System.out.print("True");
+		}
+		else {
+			System.out.print("False");
+		}
+	}
+
+}

@@ -1,0 +1,35 @@
+package buoi01;
+
+import java.util.Scanner;
+
+public class Recursion {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		int a = check();
+		recursion(a);
+		
+	}
+	public static int check() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Input a num: ");
+		int n = scanner.nextInt();
+		while(n <= 0) {
+			System.out.print("Nhap lai di ml! ");
+			n = scanner.nextInt();
+		}
+		return n;
+	}
+	
+	public static double recursion(int n) {
+		double summarize = 0;
+		if(n>0) {
+			summarize =  1/(n*(n+1)*(n+2)) + recursion(n-1) ;
+			return summarize;
+		}
+		else {
+			return 0;
+		}
+	}
+}

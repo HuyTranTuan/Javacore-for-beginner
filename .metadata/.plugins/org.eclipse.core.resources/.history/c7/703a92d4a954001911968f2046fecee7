@@ -1,0 +1,10 @@
+package buoi01_nopbai;
+
+public class UpperCase {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,40 @@
+package buoi01_nopbai;
+import java.util.Scanner;
+public class ThucThiMang {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		inputArray();
+	}
+	public static void inputArray() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Nhập số phần tử của mảng: ");
+        int n = scanner.nextInt();
+        // khởi tạo mảng arr
+        int[] arr = new int[n];
+        int summarize = 0;
+        System.out.print("Nhập các phần tử của mảng: \n");
+        for (int i = 0; i < n; i++) {
+            System.out.printf("a[%d] = ", i);
+            arr[i] = scanner.nextInt();
+        }
+        System.out.print("Các phần tử của mảng: ");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+            summarize += arr[i];
+        }
+        System.out.println(summarize/(arr.length+1));
+        int max = arr[0];
+        int min = arr[0];
+        for(int i = 0 ; i<arr.length ; i++ ) {
+        	if(arr[i] > max) {
+        		max = arr[i];
+        	}
+        	if(arr[i] < min) {
+        		min = arr[i];
+        	}
+        }
+        System.out.println(max);
+        System.out.println(min);
+	}
+}

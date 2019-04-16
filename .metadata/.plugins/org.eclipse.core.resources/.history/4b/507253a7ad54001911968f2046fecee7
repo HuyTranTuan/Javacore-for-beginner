@@ -1,0 +1,16 @@
+package buoi01_nopbai;
+import java.util.Scanner;
+public class UpperCase {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	    // Actually use the Reader
+	    String name = br.readLine();
+	    // Don't mistake String object with a Character object
+	    String s1 = name.substring(0, 1).toUpperCase();
+	    String nameCapitalized = s1 + name.substring(1);
+	    System.out.println(nameCapitalized);
+	}
+
+}

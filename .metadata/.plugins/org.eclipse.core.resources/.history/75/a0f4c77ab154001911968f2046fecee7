@@ -1,0 +1,10 @@
+package buoi01_nopbai;
+
+public abstract class TongSNT {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

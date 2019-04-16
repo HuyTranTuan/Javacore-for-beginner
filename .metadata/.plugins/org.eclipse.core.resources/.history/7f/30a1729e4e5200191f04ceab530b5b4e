@@ -1,0 +1,33 @@
+package buoi01;
+
+import java.util.Scanner;
+
+public class SuminN {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner reader = new Scanner(System.in);
+		System.out.println("Enter a num: ");
+		int n = reader.nextInt();
+		checkLength(n);
+
+	}
+	public static void  checkLength(int n) {
+		int i = 0 ;
+		int a ;
+		int sum = 0;
+		while(n>0) {
+			i += 1;
+			if(n < 10) {
+				a = n % 10;
+				sum += a;
+				break;
+			}
+			a = n % 10;
+			n = n / 10;
+			sum += a;
+		}
+		System.out.println(i);
+		System.out.println(sum);
+	}	
+}
